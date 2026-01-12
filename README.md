@@ -17,7 +17,7 @@ A simple, **offline-first web application** designed to help elderly individuals
 - ♿ Accessibility-focused UI:
   - High-contrast colors
   - Large text and buttons  
-- 💾 Fully offline-capable (no backend required)
+- 💾 Fully offline-capable
 
 ---
 
