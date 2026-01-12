@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emergency Contact App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>🚑 Emergency Contact App</h1>
+
+  <div class="card">
+    <h2>Emergency</h2>
+    <button class="danger" onclick="callPrimaryContact()">📞 Call Primary Emergency Contact</button>
+  </div>
+
+  <div class="card">
+    <h2>Medical Information</h2>
+
+    <label>Blood Type</label>
+    <input id="bloodType" />
+
+    <label>Allergies</label>
+    <textarea id="allergies"></textarea>
+
+    <label>Medications</label>
+    <textarea id="medications"></textarea>
+
+    <label>Medical Conditions</label>
+    <textarea id="conditions"></textarea>
+
+    <button onclick="saveMedicalInfo()">Save Medical Info</button>
+  </div>
+
+  <div class="card">
+    <h2>Add Emergency Contact</h2>
+    <input id="contactName" placeholder="Name" />
+    <input id="contactRelation" placeholder="Relationship" />
+    <input id="contactPhone" placeholder="Phone Number" />
+    <button onclick="addContact()">Add Contact</button>
+  </div>
+
+  <div class="card">
+    <h2>Search Contacts</h2>
+    <input id="search" placeholder="Search by name" oninput="renderContacts()" />
+  </div>
+
+  <div class="card">
+    <h2>Emergency Contacts</h2>
+    <div id="contactList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
